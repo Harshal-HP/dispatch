@@ -1,0 +1,7 @@
+name: CI - PR
+on: [pull_request]
+jobs:
+  Build:
+    uses: Harshal-HP/roboshop-github-actions/.github/workflows/ci-pr.yml@main
+    with:
+      appType: 'go'

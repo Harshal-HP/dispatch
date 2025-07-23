@@ -1,0 +1,11 @@
+name: CICD - MAIN
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  Build:
+    uses: Harshal-HP/roboshop-github-actions/.github/workflows/ci-main.yml@main
+    with:
+      appType: 'go'
