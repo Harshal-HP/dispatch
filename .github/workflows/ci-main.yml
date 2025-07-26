@@ -9,3 +9,6 @@ jobs:
     uses: Harshal-HP/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'go'
+      appName: 'dispatch'
+    secrets:
+      vault_token: ${{ secrets.vault_token }}
