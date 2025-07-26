@@ -8,3 +8,4 @@ jobs:
     uses: Harshal-HP/roboshop-github-actions/.github/workflows/ci-dev.yml@main
     with:
       appType: 'go'
+      appName: 'dispatch'

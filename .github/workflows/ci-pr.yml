@@ -5,3 +5,4 @@ jobs:
     uses: Harshal-HP/roboshop-github-actions/.github/workflows/ci-pr.yml@main
     with:
       appType: 'go'
+      appName: 'dispatch'
