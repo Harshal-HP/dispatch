@@ -1,0 +1,12 @@
+name: Deploy
+on:
+  workflow_dispatch:
+jobs:
+  CI_CD:
+    uses: Harshal-HP/roboshop-github-actions/.github/workflows/aks-deploy.yml@main
+    with:
+      appName: 'dispatch'
+      ResourceGroup: 'roboshop-ukwest-dev'
+      Env: 'dev'
+    secrets:
+      vault_token: ${{ secrets.vault_token }}
